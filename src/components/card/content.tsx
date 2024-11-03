@@ -52,7 +52,7 @@ export function Content() {
             {gameState === 'setup' && (
                 <div className="space-y-8">
                     <div>
-                        <h3 className="text-xl font-semibold mb-4 text-gray-700">
+                        <h3 className="text-xl font-semibold mb-4">
                             Select Documentation Section:
                         </h3>
                         <Select
@@ -64,12 +64,17 @@ export function Content() {
                             }
                             defaultValue={'All'}
                         >
-                            <SelectTrigger className="w-full bg-white border-gray-800 hover:border-gray-700">
+                            <SelectTrigger>
                                 <SelectValue placeholder="Select a section" />
                             </SelectTrigger>
-                            <SelectContent className="bg-white border-gray-800">
+                            <SelectContent className="bg-white dark:bg-gray-dark">
                                 {sections.map((section) => (
-                                    <SelectItem key={section} value={section}>
+                                    <SelectItem
+                                        key={section}
+                                        value={section}
+                                        className="
+                                        transition-colors duration-fast hover:cursor-pointer hover:bg-gray hover:text-white dark:bg-gray-dark dark:text-white dark:border-0 dark:hover:bg-white dark:hover:text-black"
+                                    >
                                         {section}
                                     </SelectItem>
                                 ))}
@@ -78,7 +83,7 @@ export function Content() {
                     </div>
                     <Button
                         onClick={startGame}
-                        className="w-full bg-white border-2 border-gray-800 hover:bg-gray-900 text-black hover:text-white font-medium py-6 text-lg rounded-lg transition-colors"
+                        className="w-full font-medium py-6 text-lg rounded-lg transition-colors bg-gray text-white hover:bg-black-alpha-80 dark:hover:text-black dark:hover:bg-white"
                     >
                         Start Quiz
                     </Button>
@@ -133,7 +138,7 @@ export function Content() {
                         <Button
                             onClick={handleAnswer}
                             disabled={!selectedAnswer}
-                            className="w-full bg-white hover:bg-gray-200 text-black font-medium py-6 text-lg rounded-lg transition-colors"
+                            className="w-full bg-white hover:bg-gray-200 font-medium py-6 text-lg rounded-lg transition-colors"
                         >
                             Next Question
                         </Button>
@@ -185,7 +190,7 @@ export function Content() {
                     </div>
                     <Button
                         onClick={() => dispatch({ type: 'RESTART_GAME' })}
-                        className="w-full bg-white hover:bg-gray-200 text-black font-medium py-6 text-lg rounded-lg transition-colors"
+                        className="w-full bg-white hover:bg-gray-200 font-medium py-6 text-lg rounded-lg transition-colors"
                     >
                         Try Again
                     </Button>

@@ -7,8 +7,8 @@ import '../styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'File Upload App',
-    description: 'A simple file upload application',
+    title: 'Next.JS Quiz Game',
+    description: 'A simple quiz game built with Next.js',
 }
 
 export default function RootLayout({
@@ -19,7 +19,11 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={inter.className}>
-                <ThemeProvider attribute="class" defaultTheme="dark">
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="dark"
+                    enableSystem
+                >
                     {children}
                 </ThemeProvider>
             </body>

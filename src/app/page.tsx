@@ -3,12 +3,14 @@
 import { Card } from '@/components/card'
 import { Debugger } from '@/components/debugger'
 import { QuizProvider } from '@/components/state-context'
+import { ThemeToggler } from '@/components/theme-toggler'
 
 export default function Page() {
     return (
         <QuizProvider>
             <Debugger />
-            <div className="min-h-screen w-full bg-white text-black dark:bg-black dark:text-white flex items-center justify-center p-4">
+            <ThemeToggler />
+            <div className="min-h-screen w-full flex items-center justify-center p-4">
                 <Card />
             </div>
         </QuizProvider>

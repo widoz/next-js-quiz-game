@@ -13,12 +13,10 @@ export function Debugger() {
     ] = useQuizContext()
 
     return (
-        <div className="absolute top-0 right-0 z-50">
-            <Card className="p-3 bg-black">
+        <div className="absolute bottom-10 right-10 z-50">
+            <Card className="p-3">
                 <CardHeader>
-                    <CardTitle className="text-sm text-white">
-                        Debug State
-                    </CardTitle>
+                    <CardTitle className="text-sm">Debug State</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <pre className="text-xs text-gray-400 whitespace-pre-wrap">
