@@ -13,9 +13,9 @@ export function ThemeToggler() {
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
             {theme === 'dark' ? (
-                <Sun className="h-[1.2rem] w-[1.2rem]" />
-            ) : (
                 <Moon className="h-[1.2rem] w-[1.2rem]" />
+            ) : (
+                <Sun className="h-[1.2rem] w-[1.2rem]" />
             )}
         </Button>
     )

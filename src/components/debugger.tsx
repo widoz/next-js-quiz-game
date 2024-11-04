@@ -2,15 +2,15 @@ import { Card, CardTitle, CardContent, CardHeader } from './ui/card'
 import { useQuizContext } from './state-context'
 
 export function Debugger() {
-    const [
-        {
-            gameState,
-            currentQuestionIndex,
-            selectedAnswer,
-            score,
-            selectedSection,
-        },
-    ] = useQuizContext()
+    const {
+        isSetup,
+        isPlaying,
+        isFinished,
+        currentQuestionIndex,
+        selectedAnswer,
+        score,
+        selectedSection,
+    } = useQuizContext()
 
     return (
         <div className="absolute bottom-10 right-10 z-50">
@@ -22,7 +22,9 @@ export function Debugger() {
                     <pre className="text-xs text-gray-400 whitespace-pre-wrap">
                         {JSON.stringify(
                             {
-                                gameState,
+                                isSetup: isSetup(),
+                                isPlaying: isPlaying(),
+                                isFinished: isFinished(),
                                 selectedSection,
                                 currentQuestionIndex,
                                 selectedAnswer,

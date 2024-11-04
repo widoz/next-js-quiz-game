@@ -1,25 +1,29 @@
+import { Questions } from '@/questions/types'
 import { useReducer } from 'react'
-import { Question } from '../questions/questions'
 
 type GameState = 'setup' | 'playing' | 'finished'
+
+interface Answer {
+    question: string
+    userAnswer: string
+    correctAnswer: string
+}
+
+export type Answers = Array<Answer>
 
 export interface QuizState {
     gameState: GameState
     selectedSection: string
-    currentQuestions: Question[]
+    currentQuestions: Questions
     currentQuestionIndex: number
     selectedAnswer: string
     score: number
-    answers: {
-        question: string
-        userAnswer: string
-        correctAnswer: string
-    }[]
+    answers: Answers
 }
 
 export type QuizAction =
     | { type: 'SELECT_SECTION'; payload: string }
-    | { type: 'START_GAME'; payload: Question[] }
+    | { type: 'START_GAME'; payload: Questions }
     | { type: 'SELECT_ANSWER'; payload: string }
     | { type: 'SUBMIT_ANSWER' }
     | { type: 'END_GAME' }

@@ -10,9 +10,9 @@ export default function Page() {
         <QuizProvider>
             <Debugger />
             <ThemeToggler />
-            <div className="min-h-screen w-full flex items-center justify-center p-4">
+            <main className="min-h-screen w-full flex items-center justify-center p-4">
                 <Card />
-            </div>
+            </main>
         </QuizProvider>
     )
 }
