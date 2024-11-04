@@ -6,8 +6,8 @@ export const questions: Questions = [...routingQuestions]
 export const sections = [
     'All',
     'Routing',
-    // 'Data Fetching',
-    // 'Rendering',
+    'Data Fetching',
+    'Rendering',
     // 'Caching',
     // 'Styling',
     // 'Optimizing',

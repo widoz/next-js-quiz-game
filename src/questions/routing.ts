@@ -260,4 +260,276 @@ export const routingQuestions: Questions = [
         correctAnswer: "To read the current URL's query string",
         section: 'Routing',
     },
+    {
+        id: 21,
+        difficulty: 'medium',
+        question:
+            "What is the purpose of the 'layout.js' file in Next.js routing?",
+        options: [
+            'To define the structure shared by all pages',
+            'To create API routes',
+            'To handle 404 errors',
+            'To configure build settings',
+        ],
+        correctAnswer: 'To define the structure shared by all pages',
+        section: 'Routing',
+    },
+    {
+        id: 22,
+        difficulty: 'hard',
+        question:
+            'How can you create a route handler for dynamic segments in Next.js?',
+        options: [
+            'By using square brackets in the file name, e.g., [id].js',
+            'By using the createDynamicHandler() function',
+            "By adding a 'dynamic' property to the page component",
+            "It's not possible to create route handlers for dynamic segments",
+        ],
+        correctAnswer:
+            'By using square brackets in the file name, e.g., [id].js',
+        section: 'Routing',
+    },
+    {
+        id: 23,
+        difficulty: 'medium',
+        question:
+            "What is the purpose of the 'useSelectedLayoutSegment' hook in Next.js?",
+        options: [
+            'To access the active route segment within a layout',
+            'To modify the layout structure',
+            'To handle layout transitions',
+            'To optimize layout rendering',
+        ],
+        correctAnswer: 'To access the active route segment within a layout',
+        section: 'Routing',
+    },
+    {
+        id: 24,
+        difficulty: 'easy',
+        question: "In Next.js, what is the purpose of the 'pages' directory?",
+        options: [
+            'To store static assets',
+            'To define API routes',
+            'To create page routes (in the Pages Router)',
+            'To configure build settings',
+        ],
+        correctAnswer: 'To create page routes (in the Pages Router)',
+        section: 'Routing',
+    },
+    {
+        id: 25,
+        difficulty: 'hard',
+        question: 'How can you implement middleware in Next.js routing?',
+        options: [
+            'By creating a middleware.js file in the root directory',
+            'By using the useMiddleware hook',
+            'By adding a middleware property to the page component',
+            'By configuring middleware in next.config.js',
+        ],
+        correctAnswer: 'By creating a middleware.js file in the root directory',
+        section: 'Routing',
+    },
+    {
+        id: 26,
+        difficulty: 'medium',
+        question:
+            "What is the purpose of the 'rewrites' option in next.config.js?",
+        options: [
+            'To rename files during build',
+            'To internally rewrite URLs',
+            'To optimize route loading',
+            'To handle 404 errors',
+        ],
+        correctAnswer: 'To internally rewrite URLs',
+        section: 'Routing',
+    },
+    {
+        id: 27,
+        difficulty: 'easy',
+        question:
+            'Which file is used to create a custom 500 error page in Next.js?',
+        options: ['pages/500.js', 'error.js', '500.js', 'server-error.js'],
+        correctAnswer: 'pages/500.js',
+        section: 'Routing',
+    },
+    {
+        id: 28,
+        difficulty: 'hard',
+        question:
+            "What is the purpose of the 'generateStaticParams' function in dynamic route segments?",
+        options: [
+            'To generate static routes at build time',
+            'To handle server-side rendering',
+            'To manage client-side state',
+            'To configure API endpoints',
+        ],
+        correctAnswer: 'To generate static routes at build time',
+        section: 'Routing',
+    },
+    {
+        id: 29,
+        difficulty: 'medium',
+        question: 'How can you implement route protection in Next.js?',
+        options: [
+            "By using the 'protect' property in page components",
+            'Through middleware',
+            'By using the useProtectedRoute hook',
+            "It's not possible to implement route protection in Next.js",
+        ],
+        correctAnswer: 'Through middleware',
+        section: 'Routing',
+    },
+    {
+        id: 30,
+        difficulty: 'easy',
+        question: "What is the purpose of the 'Link' component in Next.js?",
+        options: [
+            'To create external links',
+            'To handle client-side navigation',
+            'To style anchor tags',
+            'To generate sitemaps',
+        ],
+        correctAnswer: 'To handle client-side navigation',
+        section: 'Routing',
+    },
+    {
+        id: 31,
+        difficulty: 'hard',
+        question: 'How can you implement internationalized routing in Next.js?',
+        options: [
+            'By using the i18n object in next.config.js',
+            'By creating separate routes for each language',
+            'By using the useTranslation hook',
+            "It's not possible to implement internationalized routing in Next.js",
+        ],
+        correctAnswer: 'By using the i18n object in next.config.js',
+        section: 'Routing',
+    },
+    {
+        id: 32,
+        difficulty: 'medium',
+        question:
+            "What is the purpose of the 'shallow' option in the router.push() method?",
+        options: [
+            'To perform a shallow copy of the route',
+            'To update the URL without running data fetching methods',
+            'To optimize route loading',
+            'To clear the router cache',
+        ],
+        correctAnswer:
+            'To update the URL without running data fetching methods',
+        section: 'Routing',
+    },
+    {
+        id: 33,
+        difficulty: 'easy',
+        question:
+            'In Next.js, how do you create a route that matches multiple paths?',
+        options: [
+            'By using square brackets, e.g., [id].js',
+            'By using parentheses, e.g., (id).js',
+            'By using ellipsis, e.g., ...id.js',
+            'By using the matchMultiple property',
+        ],
+        correctAnswer: 'By using ellipsis, e.g., ...id.js',
+        section: 'Routing',
+    },
+    {
+        id: 34,
+        difficulty: 'hard',
+        question:
+            "What is the purpose of the 'useSelectedLayoutSegments' hook in Next.js?",
+        options: [
+            'To access all active segments in the current layout',
+            'To modify layout segments',
+            'To optimize layout rendering',
+            'To handle layout transitions',
+        ],
+        correctAnswer: 'To access all active segments in the current layout',
+        section: 'Routing',
+    },
+    {
+        id: 35,
+        difficulty: 'medium',
+        question: 'How can you implement route transitions in Next.js?',
+        options: [
+            'By using the transition property in the Link component',
+            'Through CSS animations',
+            'By using the useRouteTransition hook',
+            "It's not possible to implement route transitions in Next.js",
+        ],
+        correctAnswer: 'Through CSS animations',
+        section: 'Routing',
+    },
+    {
+        id: 36,
+        difficulty: 'easy',
+        question:
+            "What is the purpose of the 'as' prop in the Next.js Link component?",
+        options: [
+            'To specify the target route',
+            'To provide an accessible name for the link',
+            "To mask the URL in the browser's address bar",
+            'To apply custom styles to the link',
+        ],
+        correctAnswer: "To mask the URL in the browser's address bar",
+        section: 'Routing',
+    },
+    {
+        id: 37,
+        difficulty: 'hard',
+        question:
+            'How can you implement a custom error handling for specific routes in Next.js?',
+        options: [
+            'By creating an error.js file in the specific route folder',
+            'By using the handleRouteError function',
+            'By adding a try-catch block in the page component',
+            "It's not possible to implement custom error handling for specific routes",
+        ],
+        correctAnswer:
+            'By creating an error.js file in the specific route folder',
+        section: 'Routing',
+    },
+    {
+        id: 38,
+        difficulty: 'medium',
+        question:
+            "What is the purpose of the 'notFound' function in Next.js routing?",
+        options: [
+            'To redirect to a 404 page',
+            'To throw a 404 error and render the not-found UI',
+            'To handle missing route parameters',
+            'To create custom 404 pages',
+        ],
+        correctAnswer: 'To throw a 404 error and render the not-found UI',
+        section: 'Routing',
+    },
+    {
+        id: 39,
+        difficulty: 'easy',
+        question:
+            'In Next.js, how do you create a route that only matches a specific path?',
+        options: [
+            'By using the exact property in the route definition',
+            'By using parentheses in the folder name',
+            'By creating an index.js file in the folder',
+            'Next.js routes always match specific paths by default',
+        ],
+        correctAnswer: 'By creating an index.js file in the folder',
+        section: 'Routing',
+    },
+    {
+        id: 40,
+        difficulty: 'hard',
+        question:
+            "What is the purpose of the 'useParams' hook in Next.js routing?",
+        options: [
+            'To access route parameters in client components',
+            'To modify route parameters',
+            'To validate route parameters',
+            'To generate dynamic route parameters',
+        ],
+        correctAnswer: 'To access route parameters in client components',
+        section: 'Routing',
+    },
 ]
