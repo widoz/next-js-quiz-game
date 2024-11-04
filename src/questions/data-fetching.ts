@@ -1,4 +1,6 @@
-export const dataFetchingQuestions = [
+import { Questions } from './types'
+
+export const dataFetchingQuestions: Questions = [
     {
         id: 1,
         difficulty: 'easy',

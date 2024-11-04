@@ -1,7 +1,13 @@
 import { Questions } from './types'
 import { routingQuestions } from './routing'
+import { renderingQuestions } from './rendering'
+import { dataFetchingQuestions } from './data-fetching'
 
-export const questions: Questions = [...routingQuestions]
+export const questions: Questions = [
+    ...routingQuestions,
+    ...dataFetchingQuestions,
+    ...renderingQuestions,
+]
 
 export const sections = [
     'All',

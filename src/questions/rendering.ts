@@ -1,4 +1,6 @@
-export const renderingQuestions = [
+import { Questions } from './types'
+
+export const renderingQuestions: Questions = [
     {
         id: 1,
         difficulty: 'easy',
