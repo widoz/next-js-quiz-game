@@ -11,7 +11,10 @@ export default function Page() {
             <Debugger />
             <ThemeToggler />
             <main className="min-h-screen w-full flex items-center justify-center p-4">
-                <Card />
+                <Card
+                    title="Next.js Quiz"
+                    description="Test your knowledge of the React framework for the web"
+                />
             </main>
         </QuizProvider>
     )
