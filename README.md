@@ -17,6 +17,7 @@ An interactive quiz game built with Next.js that tests your knowledge of Next.js
 -   [React](https://reactjs.org/)
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [Tailwind CSS](https://tailwindcss.com/)
+-   [Shadcn](https://ui.shadcn.com/)
 
 ## Questions
 
