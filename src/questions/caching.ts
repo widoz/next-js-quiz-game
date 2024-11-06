@@ -1,4 +1,6 @@
-export const cachingQuestions = [
+import { Questions } from './types'
+
+export const cachingQuestions: Questions = [
     {
         id: 1,
         difficulty: 'easy',

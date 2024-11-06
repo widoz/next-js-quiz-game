@@ -1,4 +1,6 @@
-export const optimizingQuestions = [
+import { Questions } from './types'
+
+export const optimizingQuestions: Questions = [
     {
         id: 1,
         difficulty: 'easy',
