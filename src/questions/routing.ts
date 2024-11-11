@@ -428,10 +428,10 @@ export const routingQuestions: Questions = [
         options: [
             'By using square brackets, e.g., [id].js',
             'By using parentheses, e.g., (id).js',
-            'By using ellipsis, e.g., ...id.js',
+            'By using the catch-all syntax, e.g., [...id].js',
             'By using the matchMultiple property',
         ],
-        correctAnswer: 'By using ellipsis, e.g., ...id.js',
+        correctAnswer: 'By using the catch-all syntax, e.g., [...id].js',
         section: 'Routing',
     },
     {
