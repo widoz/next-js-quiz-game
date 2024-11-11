@@ -1,20 +1,22 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { Content } from '../../../src/components/card/content'
-import { useQuizContext } from '../../../src/components/state-context'
+import '@testing-library/jest-dom'
+import { Content } from '@/components/card/content'
+import { useQuizContext } from '@/components/state-context'
 
-jest.mock('../state-context', () => ({
+jest.mock('@/components/state-context', () => ({
     useQuizContext: jest.fn(),
 }))
 
-jest.mock('../setup-game', () => ({
+jest.mock('@/components/setup-game', () => ({
     SetupGame: () => <div data-testid="setup-game">Setup Game</div>,
 }))
 
-jest.mock('../playing-game', () => ({
+jest.mock('@/components/playing-game', () => ({
     PlayingGame: () => <div data-testid="playing-game">Playing Game</div>,
 }))
 
-jest.mock('../finished-game', () => ({
+jest.mock('@/components/finished-game', () => ({
     FinishedGame: () => <div data-testid="finished-game">Finished Game</div>,
 }))
 
@@ -26,11 +28,11 @@ describe('Content', () => {
     }
 
     beforeEach(() => {
-        // Reset all mocks to return false by default
         mockContextValue.isSetup.mockReturnValue(false)
         mockContextValue.isPlaying.mockReturnValue(false)
         mockContextValue.isFinished.mockReturnValue(false)
-        ;(useQuizContext as jest.Mock).mockReturnValue(mockContextValue)
+        // @ts-expect-error mockReturnValue is not a function
+        jest.mocked(useQuizContext).mockReturnValue(mockContextValue)
     })
 
     it('renders SetupGame when isSetup is true', () => {

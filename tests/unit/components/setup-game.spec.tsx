@@ -1,9 +1,10 @@
+import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { SetupGame } from '../../src/components/setup-game'
-import { useQuizContext } from '../../src/components/state-context'
+import { SetupGame } from '@/components/setup-game'
+import { useQuizContext } from '@/components/state-context'
 
 // Mock the context
-jest.mock('../state-context', () => ({
+jest.mock('@/components/state-context', () => ({
     useQuizContext: jest.fn(),
 }))
 

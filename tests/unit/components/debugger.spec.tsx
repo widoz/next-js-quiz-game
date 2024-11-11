@@ -1,8 +1,9 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { Debugger } from '../../src/components/debugger'
-import { useQuizContext } from '../../src/components/state-context'
+import { Debugger } from '@/components/debugger'
+import { useQuizContext } from '@/components/state-context'
 
-jest.mock('../state-context', () => ({
+jest.mock('@/components/state-context', () => ({
     useQuizContext: jest.fn(),
 }))
 
